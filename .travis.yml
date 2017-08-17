@@ -12,3 +12,4 @@ env:
 
 after_success:
 - if [[ $TRAVIS_BRANCH = "master" ]]; then "find . -type f -exec curl -u $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {} ftp://home687786128.1and1-data.host/{} \;" else echo 'branch develop'; fi
+
