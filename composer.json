@@ -1,0 +1,13 @@
+{
+    "name": "arturosf/web-celebration",
+    "authors": [
+        {
+            "name": "Arturo Sánchez Fonseca",
+            "email": "fonck.five@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^6.3"
+    }
+}
