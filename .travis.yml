@@ -9,6 +9,3 @@ env:
   global:
     - "FTP_USER=u89720756-arturo"
     - "FTP_PASSWORD=Arturo_09"
-
-after_success:
-- find . -name '*.*' -type f -exec curl -u $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {} ftp://home687786128.1and1-data.host/{} \;
