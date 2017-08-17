@@ -194,7 +194,7 @@ class CI_Image_lib {
 	public $wm_overlay_path		= '';
 
 	/**
-	 * TT font
+	 * TT fonts
 	 *
 	 * @var string
 	 */
@@ -1289,9 +1289,9 @@ class CI_Image_lib {
 			$this->wm_hor_offset = $this->wm_hor_offset * -1;
 		}
 
-		// Set font width and height
+		// Set fonts width and height
 		// These are calculated differently depending on
-		// whether we are using the true type font or not
+		// whether we are using the true type fonts or not
 		if ($this->wm_use_truetype === TRUE)
 		{
 			if (empty($this->wm_font_size))
