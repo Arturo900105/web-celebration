@@ -1,13 +1,15 @@
 language: php
+
 php:
   - 5.5
   - 7.0
+
 script: phpunit Test.php
+
 env:
   global:
     - "FTP_USER=u89720756-arturo"
     - "FTP_PASSWORD=Arturo_09"
+
 after_success:
-  - if [[ $TRAVIS_BRANCH = "master" ]]; then
-  "find ../web-celebration/ -type f -exec curl -u $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {} ftp://home687786128.1and1-data.host/" else
-  echo "branch develop"; fi
+- if [[ $TRAVIS_BRANCH = "master" ]]; then "find ../web-celebration/ -type f -exec curl -u $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {} ftp://home687786128.1and1-data.host/" else echo "branch develop"; fi
