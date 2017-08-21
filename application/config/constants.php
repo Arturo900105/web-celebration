@@ -84,4 +84,4 @@ defined('EXIT_DATABASE')       OR define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 define('DYNAMIC_PROTOCOL', ($_SERVER['SERVER_PORT'] == 443) ? 'https://' : 'http://');
-define('DYNAMIC_DOMAIN', ($_SERVER['SERVER_NAME'] == 'localhost') ? $_SERVER['SERVER_NAME'].'/web-' : $_SERVER['SERVER_NAME'].'/');
+define('DYNAMIC_DOMAIN', ($_SERVER['SERVER_NAME'] == 'localhost') ? $_SERVER['SERVER_NAME'].'/web-celebration' : (($_SERVER['SERVER_NAME'] == 'creasan.com') ? $_SERVER['SERVER_NAME'].'/celebration' : $_SERVER['SERVER_NAME'].'/'));

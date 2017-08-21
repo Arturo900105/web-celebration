@@ -38,6 +38,22 @@
     background-color: #072C47;
 }
 
+.bg-green-celebration {
+    background-color: #005548;
+}
+
+.bg-red-celebration {
+    background-color: #6e000d;
+}
+
+.bg-blue-sky-celebration {
+    background-color: #00426e;
+}
+
+.bg-purple-celebration {
+    background-color: #230057;
+}
+
 .bg-gray-celebration {
     background-color: gray;
 }
@@ -70,6 +86,35 @@
 .sq-50 {
     width: 50px;
     height: 50px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+#service2 .sq-50 {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: all .2s;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.sq-50 img {
+    width: 63%;
+}
+
+#service .sq-50:hover {
+    width: 60px;
+    height: 60px;
+    transition: all .2s;
+}
+
+#service2 .sq-50:hover {
+    width: 70px;
+    height: 70px;
+    transition: all .2s;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .sq-80 {
@@ -142,4 +187,212 @@
 
 .form_send {
     width: 600px;
+}
+
+.nav-inactive {
+    opacity: 0;
+    transition: all .2s;
+    z-index: -1;
+}
+
+.nav-active {
+    opacity: 1;
+    transition: all .2s;
+    z-index: 10000;
+}
+
+.fa-bars {
+    color: #ccc;
+    border: 1px solid #ccc;
+    background: #eeeeee;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#collapseOne div {
+    cursor: pointer;
+}
+
+.break-word {
+    -ms-word-break: break-all;
+    word-break: break-all;
+}
+
+#img-carousel {
+    height: 230px;
+    background: url("../img/bg_detail.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.carrusel {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/gal/cocina.jpg");
+    transition: all 1s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.file_1, .file_2 {
+    height: 50%;
+}
+
+.cols {
+    flex: 1;
+    background: #072C47;
+}
+
+.file_1 .col_1 {
+    opacity: 1;
+    font-size: 15px;
+    color: #072C47;
+    transition: all .5s;
+}
+
+.file_1 .col_2 {
+    opacity: 1;
+    transition: all .5s;
+}
+
+.file_1 .col_3 {
+    opacity: 1;
+    transition: all .5s;
+}
+
+.file_1 .col_4 {
+    opacity: 1;
+    transition: all .5s;
+}
+
+.file_1 .col_5 {
+    opacity: 1;
+    transition: all .5s;
+}
+
+.file_2 .col_1 {
+    opacity: 1;
+    transition: all .5s;
+}
+
+.file_2 .col_2 {
+    opacity: 1;
+    transition: all .5s;
+}
+
+.file_2 .col_3 {
+    opacity: 1;
+    transition: all .5s;
+}
+
+.file_2 .col_4 {
+    opacity: 1;
+    transition: all .5s;
+}
+
+.file_2 .col_5 {
+    opacity: 1;
+    transition: all .5s;
+}
+
+#original-nav a {
+    text-decoration: none;
+    color: #072C47;
+}
+
+#fixed-nav a {
+    text-decoration: none;
+    color: #072C47;
+}
+
+.description {
+    font-size: 12px;
+    padding: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 576px) {
+    #img-carousel {
+        height: 300px;
+    }
+
+    .file_1 .col_1 {
+        font-size: 20px;
+        color: white;
+    }
+}
+
+@media (min-width: 768px) {
+    #img-carousel {
+        height: 400px;
+    }
+
+    .file_1 .col_1 {
+        font-size: 25px;
+        color: white;
+    }
+
+    #service2 .sq-50 {
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        transition: all .2s;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    #service2 .sq-50:hover {
+        width: 70px;
+        height: 70px;
+        transition: all .2s;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    #img-carousel {
+        height: 500px;
+    }
+
+    .file_1 .col_1 {
+        font-size: 30px;
+        color: white;
+    }
+}
+
+@media (min-width: 1200px) {
+    #img-carousel {
+        height: 600px;
+    }
+
+    .file_1 .col_1 {
+        font-size: 40px;
+        color: white;
+    }
+
+    #service2 .sq-50 {
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        transition: all .2s;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    #service2 .sq-50:hover {
+        width: 70px;
+        height: 70px;
+        transition: all .2s;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
 }

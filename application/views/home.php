@@ -6,46 +6,50 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Welcome to CodeIgniter</title>
+		<title>Grupo Celebration</title>
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>">
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/font-awesome.css'); ?>">
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/celebration.css'); ?>">
+		<script type="text/javascript">
+            var title = '';
+		</script>
 	</head>
 	<body>
+		<!-- TODO COMIENZA MENÚ PARA ESCRITORIO -->
 		<div class="container-fluid bg-image">
 			<div class="container">
-				<div class="row align-items-center pt-4 pb-5
+				<div id="original-nav" class="row align-items-center pt-4 pb-5 txt-blue-celebration
 							justify-content-sm-center">
-					<div href="#about" class="col-sm-auto p-sm-3
+					<div href="#about" class="col-sm-auto p-sm-3 d-none d-sm-inline
 								p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 								p-xl-3 ancla order-lg-2">
 						NOSOTROS
 					</div>
 					<div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-3"></div>
-					<div href="#service" class="col-sm-auto p-sm-3
+					<div href="#service" class="col-sm-auto p-sm-3 d-none d-sm-inline
 								p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 								p-xl-3 ancla order-lg-4">
 						EVENTOS
 					</div>
 					<div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-5"></div>
-					<div href="#team" class="col-sm-auto p-sm-3
+					<div href="#team" class="col-sm-auto p-sm-3 d-none d-sm-inline
 				                p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 				                p-xl-3 ancla order-lg-6">
 						PRODUCTOS
 					</div>
 					<div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-7"></div>
-					<div href="#contact" class="col-sm-auto p-sm-3
+					<div href="#contact" class="col-sm-auto p-sm-3 d-none d-sm-inline
 								p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 				                p-xl-3 ancla order-lg-8">
 						CONTACTO
 					</div>
-					<div class="m-2 pt-2 pb-2 pl-4 pr-4 rounded text-white text-center bg-blue-celebration font-weight-bold font-champagne-bold
+					<div class="m-2 pt-2 pb-2 pl-4 pr-4 rounded text-white text-center bg-blue-celebration font-weight-bold font-champagne-bold mt-5
 				                col-xs-12
-				                col-sm-12
+				                col-sm-12 mt-sm-0
 				                col-md-12
 				                col-lg-auto mr-lg-auto order-lg-1">
 						EVENTOS, BANQUETES, CONGRESOS Y CONVENCIONES
@@ -101,13 +105,74 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			</div>
 		</div>
+		<!-- TODO TERMINA MENÚ PARA ESCRITORIO -->
 
-		<div id="about" class="container-fluid pt-5 pb-5">
+		<!-- TODO COMIENZA MENÚ PARA MÓVILES -->
+		<div class="container-fluid bg-white fixed-top d-sm-none">
+			<div class="row align-items-center no-gutters">
+				<div class="col text-left text-uppercase">Grupo Celebration</div>
+				<div class="col-auto ml-auto text-right">
+					<i class="fa fa-bars rounded pl-2 pr-2 m-2" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></i>
+				</div>
+			</div>
+			<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+				<div href="#about" class="pt-1 pb-1 ancla">NOSOTROS</div>
+				<div href="#service" class="pt-1 pb-1 ancla">EVENTOS</div>
+				<div href="#team" class="pt-1 pb-1 ancla">PRODUCTOS</div>
+				<div href="#contact" class="pt-1 pb-1 ancla">CONTACTO</div>
+			</div>
+		</div>
+		<!-- TODO TERMINA MENÚ PARA MÓVILES -->
+
+		<!-- TODO COMIENZA MENÚ FIXED -->
+		<div class="container-fluid bg-white fixed-top nav-inactive d-none d-sm-block" id="fixed-nav">
+			<div class="container">
+				<div class="row align-items-center justify-content-sm-center txt-blue-celebration">
+					<div href="#about" class="col-sm-auto p-sm-3
+								p-md-3
+				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
+								p-xl-3 ancla order-lg-2">
+						NOSOTROS
+					</div>
+					<div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-3"></div>
+					<div href="#service" class="col-sm-auto p-sm-3
+								p-md-3
+				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
+								p-xl-3 ancla order-lg-4">
+						EVENTOS
+					</div>
+					<div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-5"></div>
+					<div href="#team" class="col-sm-auto p-sm-3
+				                p-md-3
+				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
+				                p-xl-3 ancla order-lg-6">
+						PRODUCTOS
+					</div>
+					<div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-7"></div>
+					<div href="#contact" class="col-sm-auto p-sm-3
+								p-md-3
+				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
+				                p-xl-3 ancla order-lg-8">
+						CONTACTO
+					</div>
+					<div class="m-2 pt-2 pb-2 pl-4 pr-4 rounded text-white text-center bg-blue-celebration font-weight-bold font-champagne-bold
+				                col-xs-12
+				                col-sm-12
+				                col-md-12
+				                col-lg-auto mr-lg-auto order-lg-1 d-none d-lg-block">
+						EVENTOS, BANQUETES, CONGRESOS Y CONVENCIONES
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- TODO TERMINA MENÚ FIXED -->
+
+		<div id="about" class="container-fluid txt-blue-celebration pt-5 pb-5">
 			<div class="row justify-content-center pt-4">
 				<div class="background-line-main bg-blue-celebration"></div>
 				<div class="col-auto p-3 mt-1 p-relative">
 					<div class="m-auto d-flex align-items-center justify-content-center text-white sq-50 bg-blue-celebration rounded-circle">
-						<img class="" width="30" src="<?php echo base_url('assets/img/a.png'); ?>">
+						<img class="" src="<?php echo base_url('assets/img/a.png'); ?>">
 						<div class="background-line bg-blue-celebration"></div>
 					</div>
 					<div class="service-title mt-4">
@@ -116,7 +181,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<div class="col-auto p-3 mt-1 p-relative">
 					<div class="m-auto d-flex align-items-center justify-content-center text-white sq-50 bg-blue-celebration rounded-circle">
-						<img class="" width="30" src="<?php echo base_url('assets/img/b.png'); ?>">
+						<img class="" src="<?php echo base_url('assets/img/b.png'); ?>">
 						<div class="background-line bg-blue-celebration"></div>
 					</div>
 					<div class="service-title mt-4">
@@ -125,7 +190,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<div class="col-auto p-3 mt-1 p-relative">
 					<div class="m-auto d-flex align-items-center justify-content-center text-white sq-50 bg-blue-celebration rounded-circle">
-						<img class="" width="30" src="<?php echo base_url('assets/img/c.png'); ?>">
+						<img class="" src="<?php echo base_url('assets/img/c.png'); ?>">
 						<div class="background-line bg-blue-celebration"></div>
 					</div>
 					<div class="service-title mt-4">
@@ -134,7 +199,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<div class="col-auto p-3 mt-1 p-relative">
 					<div class="m-auto d-flex align-items-center justify-content-center text-white sq-50 bg-blue-celebration rounded-circle">
-						<img class="" width="30" src="<?php echo base_url('assets/img/d.png'); ?>">
+						<img class="" src="<?php echo base_url('assets/img/d.png'); ?>">
 						<div class="background-line bg-blue-celebration"></div>
 					</div>
 					<div class="service-title mt-4">
@@ -143,7 +208,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<div class="col-auto p-3 mt-1 p-relative">
 					<div class="m-auto d-flex align-items-center justify-content-center text-white sq-50 bg-blue-celebration rounded-circle">
-						<img class="" width="30" src="<?php echo base_url('assets/img/e.png'); ?>">
+						<img class="" src="<?php echo base_url('assets/img/e.png'); ?>">
 						<div class="background-line bg-blue-celebration"></div>
 					</div>
 					<div class="service-title mt-4">
@@ -152,7 +217,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<div class="col-auto p-3 mt-1 p-relative">
 					<div class="m-auto d-flex align-items-center justify-content-center text-white sq-50 bg-blue-celebration rounded-circle">
-						<img class="" width="30" src="<?php echo base_url('assets/img/f.png'); ?>">
+						<img class="" src="<?php echo base_url('assets/img/f.png'); ?>">
 						<div class="background-line bg-blue-celebration"></div>
 					</div>
 					<div class="service-title mt-4">
@@ -161,7 +226,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<div class="col-auto p-3 mt-1 p-relative">
 					<div class="m-auto d-flex align-items-center justify-content-center text-white sq-50 bg-blue-celebration rounded-circle">
-						<img class="" width="30" src="<?php echo base_url('assets/img/g.png'); ?>">
+						<img class="" src="<?php echo base_url('assets/img/g.png'); ?>">
 						<div class="background-line bg-blue-celebration"></div>
 					</div>
 					<div class="service-title mt-4">
@@ -207,10 +272,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			<div class="row justify-content-center pt-4">
 				<div class="col-xs-12 col-sm-6 col-md-4 p-3 mt-1 p-relative text-center">
-					<div class="m-auto d-flex align-items-center justify-content-center text-white sq-50 bg-light rounded-circle">
-						<img class="" width="30" src="<?php echo base_url('assets/img/1.png'); ?>">
+					<a href="<?php echo base_url('servicio/empresariales'); ?>" class="m-auto d-flex align-items-center justify-content-center text-white sq-50 bg-light rounded-circle">
+						<img class="" src="<?php echo base_url('assets/img/1.png'); ?>">
 						<div class="background-line bg-blue-celebration"></div>
-					</div>
+					</a>
 					<div class="service-title mt-4">
 						<h5>Empresariales</h5>
 						<p class="text-center desc">
@@ -222,10 +287,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-4 p-3 mt-1 p-relative text-center">
-					<div class="m-auto d-flex align-items-center justify-content-center text-white sq-50 bg-light rounded-circle">
-						<img class="" width="30" src="<?php echo base_url('assets/img/2.png'); ?>">
+					<a href="<?php echo base_url('servicio/sociales'); ?>" class="m-auto d-flex align-items-center justify-content-center text-white sq-50 bg-light rounded-circle">
+						<img class="" src="<?php echo base_url('assets/img/2.png'); ?>">
 						<div class="background-line bg-blue-celebration"></div>
-					</div>
+					</a>
 					<div class="service-title mt-4">
 						<h5>Sociales</h5>
 						<p class="text-center desc">
@@ -237,10 +302,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-4 p-3 mt-1 p-relative text-center">
-					<div class="m-auto d-flex align-items-center justify-content-center text-white sq-50 bg-light rounded-circle">
-						<img class="" width="30" src="<?php echo base_url('assets/img/3.png'); ?>">
+					<a href="<?php echo base_url('servicio/privados'); ?>" class="m-auto d-flex align-items-center justify-content-center text-white sq-50 bg-light rounded-circle">
+						<img class="" src="<?php echo base_url('assets/img/3.png'); ?>">
 						<div class="background-line bg-blue-celebration"></div>
-					</div>
+					</a>
 					<div class="service-title mt-4">
 						<h5>Privados</h5>
 						<p class="text-center desc">
@@ -254,10 +319,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 			<div class="row justify-content-center pt-4">
 				<div class="col-xs-12 col-sm-6 col-md-4 p-3 mt-1 p-relative text-center">
-					<div class="m-auto d-flex align-items-center justify-content-center text-white sq-50 bg-light rounded-circle">
-						<img class="" width="30" src="<?php echo base_url('assets/img/4.png'); ?>">
+					<a href="<?php echo base_url('servicio/cocina'); ?>" class="m-auto d-flex align-items-center justify-content-center text-white sq-50 bg-light rounded-circle">
+						<img class="" src="<?php echo base_url('assets/img/4.png'); ?>">
 						<div class="background-line bg-blue-celebration"></div>
-					</div>
+					</a>
 					<div class="service-title mt-4">
 						<h5>Cocina</h5>
 						<p class="text-center desc">
@@ -267,10 +332,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-4 p-3 mt-1 p-relative text-center">
-					<div class="m-auto d-flex align-items-center justify-content-center text-white sq-50 bg-light rounded-circle">
-						<img class="" width="30" src="<?php echo base_url('assets/img/5.png'); ?>">
+					<a href="<?php echo base_url('servicio/profesionales'); ?>" class="m-auto d-flex align-items-center justify-content-center text-white sq-50 bg-light rounded-circle">
+						<img class="" src="<?php echo base_url('assets/img/5.png'); ?>">
 						<div class="background-line bg-blue-celebration"></div>
-					</div>
+					</a>
 					<div class="service-title mt-4">
 						<h5>Profesionales</h5>
 						<p class="text-center desc">
@@ -281,10 +346,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-4 p-3 mt-1 p-relative text-center">
-					<div class="m-auto d-flex align-items-center justify-content-center text-white sq-50 bg-light rounded-circle">
-						<img class="" width="30" src="<?php echo base_url('assets/img/6.png'); ?>">
+					<a href="<?php echo base_url('servicio/decoracion'); ?>" class="m-auto d-flex align-items-center justify-content-center text-white sq-50 bg-light rounded-circle">
+						<img class="" src="<?php echo base_url('assets/img/6.png'); ?>">
 						<div class="background-line bg-blue-celebration"></div>
-					</div>
+					</a>
 					<div class="service-title mt-4">
 						<h5>Decoración y más...</h5>
 						<p class="text-center desc">
@@ -297,7 +362,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div>
 
-		<div id="team" class="container-fluid pt-5 pb-5">
+		<div id="team" class="container-fluid txt-blue-celebration pt-5 pb-5">
 			<div class="container pt-4 pb-4">
 				<div class="row align-items-center justify-content-center">
 					<h1 class="text-center w-100 d-none d-sm-block font-champagne-bold">Trabajamos con</h1>
@@ -357,6 +422,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<div class="rounded-circle sq-130 bg-light-gray-celebration m-3 d-flex align-items-center justify-content-center p-2"></div>
 			</div>
+
 			<div class="row align-items-center justify-content-center pt-4 d-none d-lg-flex d-xl-none text-white text-center">
 				<div class="rounded-circle sq-110 bg-gray-celebration m-3 d-flex align-items-center justify-content-center p-2">
 					Afore Banamex
@@ -401,6 +467,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<div class="rounded-circle sq-110 bg-light-gray-celebration m-3 d-flex align-items-center justify-content-center p-2"></div>
 			</div>
+
 			<div class="row align-items-center justify-content-center pt-4 d-none d-md-flex d-lg-none text-white text-center">
 				<div class="rounded-circle sq-80 bg-gray-celebration m-2 d-flex align-items-center justify-content-center p-2">
 					Afore Banamex
@@ -445,6 +512,50 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<div class="rounded-circle sq-80 bg-light-gray-celebration m-2 d-flex align-items-center justify-content-center p-2"></div>
 			</div>
+
+
+			<div class="row align-items-center justify-content-center pt-4 d-flex d-sm-none text-center text-white">
+				<div class="rounded-circle sq-110 bg-gray-celebration m-3 d-flex align-items-center justify-content-center p-2">
+					Afore Banamex
+				</div>
+				<div class="rounded-circle sq-110 bg-light-gray-celebration m-3 d-flex align-items-center justify-content-center p-2">
+					Banco de México
+				</div>
+				<div class="rounded-circle sq-110 bg-blue-celebration m-3 d-flex align-items-center justify-content-center p-2">
+					ADO
+				</div>
+				<div class="rounded-circle sq-110 bg-light-gray-celebration m-3 d-flex align-items-center justify-content-center p-2">
+					Inbursa
+				</div>
+				<div class="rounded-circle sq-110 bg-blue-celebration m-3 d-flex align-items-center justify-content-center p-2">
+					Herdez
+				</div>
+				<div class="rounded-circle sq-110 bg-gray-celebration m-3 d-flex align-items-center justify-content-center p-2">
+					Red Uno
+				</div>
+				<div class="rounded-circle sq-110 bg-light-gray-celebration m-3 d-flex align-items-center justify-content-center p-2">
+					Pionner
+				</div>
+				<div class="rounded-circle sq-110 bg-gray-celebration m-3 d-flex align-items-center justify-content-center p-2">
+					Purina
+				</div>
+				<div class="rounded-circle sq-110 bg-light-gray-celebration m-3 d-flex align-items-center justify-content-center p-2">
+					Hospital ABC
+				</div>
+				<div class="rounded-circle sq-110 bg-blue-celebration m-3 d-flex align-items-center justify-content-center p-2">
+					ISSSTE
+				</div>
+				<div class="rounded-circle sq-110 bg-light-gray-celebration m-3 d-flex align-items-center justify-content-center p-2">
+					Gobierno del D.F.
+				</div>
+				<div class="rounded-circle sq-110 bg-blue-celebration m-3 d-flex align-items-center justify-content-center p-2">
+					Secretaría de Desarrollo Social
+				</div>
+				<div class="rounded-circle sq-110 bg-gray-celebration m-3 d-flex align-items-center justify-content-center p-2">
+					Instituto Nacional Electoral
+				</div>
+			</div>
+
 		</div>
 
 		<div id="contact" class="container-fluid bg-blue-gray-celebration text-white pt-5 pb-5">
@@ -464,15 +575,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 
 			<div class="row justify-content-center">
-				<div class="col-auto text-center m-4">
+				<div class="col-xs-12 col-sm-auto text-center m-4">
 					<img width="130" class="pt-2 pb-2 border-5" src="<?php echo base_url('assets/img/contacto.png'); ?>">
 					<h1 class="font-signpainter mt-3">VSP Banquetes Gerenciales</h1>
-					<h5 class="font-champagne-bold mt-3">Tel. 5446 1272</h5>
-					<h5 class="font-champagne-bold">vspbanquetesgerenciales@hotmail.com</h5>
+					<h5 class="font-champagne-bold mt-3"><a href="tel:01555446 1272" class="text-white">Tel. 5446
+							1272</a></h5>
+					<h5 class="font-champagne-bold break-word">vspbanquetesgerenciales@hotmail.com</h5>
 					<h5 class="font-champagne-bold">RFC. VBG100115436</h5>
 				</div>
-				<div class="col-auto form-col bg-blue-celebration p-4 m-4 rounded">
-                    <?php echo form_open('', array('class' => 'form_send')); ?>
+				<div class="col-xs-12 col-sm-auto form-col bg-blue-celebration p-4 m-4 rounded">
+                    <?php echo form_open('', array('class' => 'form_send d-none d-md-block')); ?>
 					<div class="row no-gutters mb-4">
                         <?php
                         echo form_label('Nombre', '', array(
@@ -524,44 +636,100 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         ));
                         ?>
 					</div>
+                    <?php echo form_close(); ?>
+
+                    <?php echo form_open('', array('class' => 'w-100 d-md-none')); ?>
+					<div class="row no-gutters mb-4">
+                        <?php
+                        echo form_label('Nombre', '', array(
+                            'class' => 'col-12'
+                        ));
+                        echo form_input(array(
+                            'name' => 'name',
+                            'class' => 'col-12',
+                            'id' => 'name'
+                        ));
+                        ?>
+					</div>
+					<div class="row no-gutters mb-4">
+                        <?php
+                        echo form_label('Teléfono', '', array(
+                            'class' => 'col-12'
+                        ));
+                        echo form_input(array(
+                            'type' => 'text',
+                            'name' => 'phone',
+                            'class' => 'col-12'
+                        ));
+                        ?>
+					</div>
+					<div class="row no-gutters mb-4">
+                        <?php
+                        echo form_label('E-mail', '', array(
+                            'class' => 'col-12r'
+                        ));
+                        echo form_input(array(
+                            'type' => 'text',
+                            'name' => 'email',
+                            'class' => 'col-12'
+                        ));
+                        ?>
+					</div>
+					<div class="row no-gutters mb-4">
+                        <?php
+                        echo form_label('Mensaje', '', array(
+                            'class' => 'col-12'
+                        ));
+                        echo form_textarea(array(
+                            'name' => 'message',
+                            'class' => 'col-12',
+                            'rows' => '4'
+                        ));
+                        ?>
+					</div>
+					<div class="row no-gutters ">
+                        <?php
+                        echo form_submit('enviar', 'Enviar', array(
+                            'class' => 'col-12'
+                        ));
+                        ?>
+					</div>
+                    <?php echo form_close(); ?>
 				</div>
-                <?php echo form_close(); ?>
 			</div>
 			<!-- end col-6 -->
 		</div>
 
-		</div>
-
 		<footer class="container-fluid bg-blue-celebration text-white pt-4 pb-4">
 			<div class="row align-items-center justify-content-sm-center">
-				<div class="text-uppercase col-sm-auto p-sm-3
+				<div class="text-uppercase col-md-auto p-sm-3 text-center text-md-left
 								p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 								p-xl-3">
 					www.grupocelebration.com
 				</div>
-				<div href="#about" class="col-sm-auto p-sm-3
+				<div href="#about" class="col-sm-auto p-sm-3 d-none d-sm-inline
 								p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 								p-xl-3 ancla">
 					NOSOTROS
 				</div>
 				<div class="d-none d-sm-block border-right-2 bg-white h-25-px"></div>
-				<div href="#service" class="col-sm-auto p-sm-3
+				<div href="#service" class="col-sm-auto p-sm-3 d-none d-sm-inline
 								p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 								p-xl-3 ancla">
 					EVENTOS
 				</div>
 				<div class="d-none d-sm-block border-right-2 bg-white h-25-px"></div>
-				<div href="#team" class="col-sm-auto p-sm-3
+				<div href="#team" class="col-sm-auto p-sm-3 d-none d-sm-inline
 				                p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 				                p-xl-3 ancla">
 					PRODUCTOS
 				</div>
 				<div class="d-none d-sm-block border-right-2 bg-white h-25-px"></div>
-				<div href="#contact" class="col-sm-auto p-sm-3
+				<div href="#contact" class="col-sm-auto p-sm-3 d-none d-sm-inline
 								p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 				                p-xl-3 ancla">
@@ -572,6 +740,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<script type="application/javascript" src="<?php echo base_url('assets/js/jquery-3.2.1.min.js'); ?>"></script>
 		<script type="application/javascript" src="<?php echo base_url('assets/js/tether.min.js'); ?>"></script>
+		<script type="application/javascript" src="<?php echo base_url('assets/js/popper.min.js'); ?>"></script>
 		<script type="application/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
 		<script type="application/javascript" src="<?php echo base_url('assets/js/celebration.js'); ?>"></script>
 	</body>
