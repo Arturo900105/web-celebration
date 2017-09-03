@@ -7,6 +7,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Grupo Celebration - Servicios</title>
+		<meta name="description" content="Grupo Celebration. EVENTOS, BANQUETES, CONGRESOS Y CONVENCIONES. QUEREMOS SER TU PROVEEDORA DE CONFIANZA">
+		<meta name="robots" content="all">
+		<meta name="distribution" content="global">
+		<meta name="rating" content="general">
+		<link rel="canonical" href="http://www.grupocelebration.com/" />
+		<link rel="shortcut icon" type="image/png" href="<?php echo base_url('assets/img/favicon.png'); ?>"/>
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>">
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/font-awesome.css'); ?>">
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/celebration.css'); ?>">
@@ -27,26 +33,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						NOSOTROS
 					</a>
 					<div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-3"></div>
-					<div href="#service2" class="col-sm-auto p-sm-3 d-none d-sm-inline
+					<a href="#service2" class="col-sm-auto p-sm-3 d-none d-sm-inline
 								p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 								p-xl-3 ancla order-lg-4">
 						EVENTOS
-					</div>
+					</a>
 					<div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-5"></div>
 					<a href="<?php echo base_url(); ?>" class="col-sm-auto p-sm-3 d-none d-sm-inline
 				                p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 				                p-xl-3 ancla order-lg-6">
-						PRODUCTOS
+						CLIENTES
 					</a>
 					<div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-7"></div>
-					<div href="#contact" class="col-sm-auto p-sm-3 d-none d-sm-inline
+					<a href="#contact" class="col-sm-auto p-sm-3 d-none d-sm-inline
 								p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 				                p-xl-3 ancla order-lg-8">
 						CONTACTO
-					</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -63,7 +69,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
 				<div href="#about" class="pt-1 pb-1 ancla">NOSOTROS</div>
 				<div href="#service2" class="pt-1 pb-1 ancla">EVENTOS</div>
-				<div href="#team" class="pt-1 pb-1 ancla">PRODUCTOS</div>
+				<div href="#team" class="pt-1 pb-1 ancla">CLIENTES</div>
 				<div href="#contact" class="pt-1 pb-1 ancla">CONTACTO</div>
 			</div>
 		</div>
@@ -80,26 +86,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						NOSOTROS
 					</a>
 					<div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-3"></div>
-					<div href="#service2" class="col-sm-auto p-sm-3
+					<a href="#service2" class="col-sm-auto p-sm-3
 								p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 								p-xl-3 ancla order-lg-4">
 						EVENTOS
-					</div>
+					</a>
 					<div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-5"></div>
 					<a href="<?php echo base_url(); ?>" class="col-sm-auto p-sm-3
 				                p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 				                p-xl-3 ancla order-lg-6">
-						PRODUCTOS
+						CLIENTES
 					</a>
 					<div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-7"></div>
-					<div href="#contact" class="col-sm-auto p-sm-3
+					<a href="#contact" class="col-sm-auto p-sm-3
 								p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 				                p-xl-3 ancla order-lg-8">
 						CONTACTO
-					</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -364,13 +370,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="container pt-4 pb-4">
 				<div class="row align-items-center justify-content-center">
 					<h4 class="text-center w-100 font-champagne-bold">
-						<a href="tel:01555446 1272" class="txt-blue-celebration">Tel. 5446 1272</a>
+						<a href="tel:01555550 5520" class="txt-blue-celebration">Tel. 5550 5520</a>
 					</h4>
 					<h5 class="text-center w-100 font-champagne-bold break-word">
-						vspbanquetesgerenciales@hotmail.com
+						contacto@grupocelebration.com
 					</h5>
 					<h4 class="text-center w-100 font-champagne-bold">
-						RFC. VBG100115436
+						RFC: CCE0803282J2
 					</h4>
 				</div>
 			</div>
@@ -402,7 +408,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				                p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 				                p-xl-3 ancla">
-					PRODUCTOS
+					CLIENTES
 				</a>
 				<div class="d-none d-sm-block border-right-2 bg-white h-25-px"></div>
 				<div href="#contact" class="col-sm-auto p-sm-3 d-none d-sm-inline
