@@ -7,4 +7,4 @@ script: phpunit Test.php
 
 master:
   after_success:
-    - test $TRAVIS_BRANCH = "master" && php -f build.php
+    - php -f build.php
