@@ -27,33 +27,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="container">
 				<div id="original-nav" class="row align-items-center pt-4 pb-5 txt-blue-celebration
 							justify-content-sm-center">
-					<div href="#about" class="col-sm-auto p-sm-3 d-none d-sm-inline
+					<a href="#about" class="col-sm-auto p-sm-3 d-none d-sm-inline
 								p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 								p-xl-3 ancla order-lg-2">
+                        <div class="indicator"><div></div></div>
 						NOSOTROS
-					</div>
+					</a>
 					<div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-3"></div>
-					<div href="#service" class="col-sm-auto p-sm-3 d-none d-sm-inline
+					<a href="#service" class="col-sm-auto p-sm-3 d-none d-sm-inline
 								p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 								p-xl-3 ancla order-lg-4">
+                        <div class="indicator"><div></div></div>
 						EVENTOS
-					</div>
+					</a>
 					<div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-5"></div>
-					<div href="#team" class="col-sm-auto p-sm-3 d-none d-sm-inline
+					<a href="#team" class="col-sm-auto p-sm-3 d-none d-sm-inline
 				                p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 				                p-xl-3 ancla order-lg-6">
+                        <div class="indicator"><div></div></div>
 						CLIENTES
-					</div>
+					</a>
 					<div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-7"></div>
-					<div href="#contact" class="col-sm-auto p-sm-3 d-none d-sm-inline
+					<a href="#contact" class="col-sm-auto p-sm-3 d-none d-sm-inline
 								p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 				                p-xl-3 ancla order-lg-8">
+                        <div class="indicator"><div></div></div>
 						CONTACTO
-					</div>
+					</a>
 					<div class="m-2 pt-2 pb-2 pl-4 pr-4 rounded text-white text-center bg-blue-celebration font-weight-bold font-champagne-bold mt-5
 				                col-xs-12
 				                col-sm-12 mt-sm-0
@@ -135,33 +139,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="container-fluid bg-white fixed-top nav-inactive d-none d-sm-block" id="fixed-nav">
 			<div class="container">
 				<div class="row align-items-center justify-content-sm-center txt-blue-celebration">
-					<div href="#about" class="col-sm-auto p-sm-3
+					<a href="#about" class="col-sm-auto p-sm-3
 								p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 								p-xl-3 ancla order-lg-2">
+                        <div class="indicator"><div></div></div>
 						NOSOTROS
-					</div>
+					</a>
 					<div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-3"></div>
-					<div href="#service" class="col-sm-auto p-sm-3
+					<a href="#service" class="col-sm-auto p-sm-3
 								p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 								p-xl-3 ancla order-lg-4">
+                        <div class="indicator"><div></div></div>
 						EVENTOS
-					</div>
+					</a>
 					<div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-5"></div>
-					<div href="#team" class="col-sm-auto p-sm-3
+					<a href="#team" class="col-sm-auto p-sm-3
 				                p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 				                p-xl-3 ancla order-lg-6">
+                        <div class="indicator"><div></div></div>
 						CLIENTES
-					</div>
+					</a>
 					<div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-7"></div>
-					<div href="#contact" class="col-sm-auto p-sm-3
+					<a href="#contact" class="col-sm-auto p-sm-3
 								p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 				                p-xl-3 ancla order-lg-8">
+                        <div class="indicator"><div></div></div>
 						CONTACTO
-					</div>
+					</a>
 					<div class="m-2 pt-2 pb-2 pl-4 pr-4 rounded text-white text-center bg-blue-celebration font-weight-bold font-champagne-bold
 				                col-xs-12
 				                col-sm-12
