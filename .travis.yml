@@ -5,11 +5,6 @@ php:
 
 script: phpunit Test.php
 
-env:
-  global:
-    - "FTP_USER=u89720756-arturo"
-    - "FTP_PASSWORD=Arturo_09"
-
-after_success:
-  - if [[ $TRAVIS_BRANCH = "master ]]; then php -f build.php; fi
-
+master:
+  after_success:
+    - test $TRAVIS_BRANCH = "master" && php -f build.php
