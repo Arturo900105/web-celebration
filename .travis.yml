@@ -4,7 +4,7 @@ php:
   - 5.5
 
 install:
-  - sudo pecl install ssh2 channel://pecl.php.net/ssh2-1.0
+  - sudo apt-get install autoconf libssh2-1-dev
 
 script: phpunit Test.php
 
