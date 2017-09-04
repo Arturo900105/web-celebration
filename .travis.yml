@@ -4,7 +4,7 @@ php:
   - 5.5
 
 install:
-  - sudo apt-get install -y -qq libssh2-1-dev libssh2-php
+  - sudo apt-get install libssh2–1-dev libssh2–1
 
 script: phpunit Test.php
 
