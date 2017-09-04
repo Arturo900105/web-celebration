@@ -5,6 +5,5 @@ php:
 
 script: phpunit Test.php
 
-master:
-  after_success:
-    - php -f build.php
+after_success:
+  - test $TRAVIS_BRANCH = "master" && php -f build.php
