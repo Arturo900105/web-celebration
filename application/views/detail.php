@@ -37,7 +37,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 								p-xl-3 order-lg-4 active">
                 <div class="indicator"><div></div></div>
-                EVENTOS
+                SERVICIOS
             </a>
             <div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-5"></div>
             <a href="<?php echo base_url(); ?>" class="col-sm-auto p-sm-3 d-none d-sm-inline
@@ -71,7 +71,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
         <div href="#about" class="pt-1 pb-1 ancla">NOSOTROS</div>
-        <div href="#service2" class="pt-1 pb-1 ancla">EVENTOS</div>
+        <div href="#service2" class="pt-1 pb-1 ancla">SERVICIOS</div>
         <div href="#team" class="pt-1 pb-1 ancla">CLIENTES</div>
         <div href="#contact" class="pt-1 pb-1 ancla">CONTACTO</div>
     </div>
@@ -95,7 +95,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 								p-xl-3 ancla order-lg-4 active">
                 <div class="indicator"><div></div></div>
-                EVENTOS
+                SERVICIOS
             </a>
             <div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-5"></div>
             <a href="<?php echo base_url(); ?>" class="col-sm-auto p-sm-3
@@ -128,9 +128,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     if ($entry != "." && $entry != "..") {
                         ?>
                         <?php if ($indice == 0) { ?>
-                            <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleControls" data-slide-to="0" class="active" style="background-image: url('<?php echo base_url('assets/img/gal/' . $imgSet . '/' . $entry); ?>');"></li>
                         <?php } else { ?>
-                            <li data-target="#carouselExampleControls" data-slide-to="<?php echo $indice; ?>"></li>
+                            <li data-target="#carouselExampleControls" data-slide-to="<?php echo $indice; ?>" style="background-image: url('<?php echo base_url('assets/img/gal/' . $imgSet . '/' . $entry); ?>');"></li>
                         <?php } ?>
                         <?php $indice++;
                     }
@@ -169,6 +169,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
+        <div class="shadow"></div>
     </div>
 </div>
 
@@ -345,7 +346,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="row no-gutters ">
                 <?php
                 echo form_submit('enviar', 'Enviar', array(
-                    'class' => 'col-auto ml-auto'
+                    'class' => 'col-auto ml-auto pl-5 pr-5'
                 ));
                 ?>
             </div>
@@ -448,7 +449,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 								p-xl-3 ancla">
-            EVENTOS
+            SERVICIOS
         </div>
         <div class="d-none d-sm-block border-right-2 bg-white h-25-px"></div>
         <a href="<?php echo base_url(); ?>" class="col-sm-auto p-sm-3 d-none d-sm-inline

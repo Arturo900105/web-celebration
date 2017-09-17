@@ -40,7 +40,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 								p-xl-3 ancla order-lg-4">
                         <div class="indicator"><div></div></div>
-						EVENTOS
+                        SERVICIOS
 					</a>
 					<div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-5"></div>
 					<a href="#team" class="col-sm-auto p-sm-3 d-none d-sm-inline
@@ -128,7 +128,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 			<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
 				<div href="#about" class="pt-1 pb-1 ancla">NOSOTROS</div>
-				<div href="#service" class="pt-1 pb-1 ancla">EVENTOS</div>
+				<div href="#service" class="pt-1 pb-1 ancla">SERVICIOS</div>
 				<div href="#team" class="pt-1 pb-1 ancla">CLIENTES</div>
 				<div href="#contact" class="pt-1 pb-1 ancla">CONTACTO</div>
 			</div>
@@ -152,7 +152,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 								p-xl-3 ancla order-lg-4">
                         <div class="indicator"><div></div></div>
-						EVENTOS
+                        SERVICIOS
 					</a>
 					<div class="d-none d-sm-block border-right-2 bg-blue-celebration h-25-px order-lg-5"></div>
 					<a href="#team" class="col-sm-auto p-sm-3
@@ -646,7 +646,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="row no-gutters ">
                         <?php
                         echo form_submit('enviar', 'Enviar', array(
-                            'class' => 'col-auto ml-auto'
+                            'class' => 'col-auto ml-auto pl-5 pr-5'
                         ));
                         ?>
 					</div>
@@ -733,7 +733,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								p-md-3
 				                pt-lg-3 pb-lg-3 pl-lg-2 pr-lg-2
 								p-xl-3 ancla">
-					EVENTOS
+                    SERVICIOS
 				</div>
 				<div class="d-none d-sm-block border-right-2 bg-white h-25-px"></div>
 				<div href="#team" class="col-sm-auto p-sm-3 d-none d-sm-inline
